@@ -7,12 +7,11 @@ for await (const req of server) {
 	// Read the url
 	const url = req.url;
 	const params = req.url.split("?");
-    console.log('Request from client ${url}');
 	if (params.length >= 2) {
 		const search_params = new URLSearchParams(params[1]);
 		console.log(search_params.get('refresh'));
 	}
 	
-	const text = await readFileStr('./views/index.html');
+	const text = await readFileStr('./views/'+ url.substr(1) +'.html');
 	req.respond({ body: text });    
 }
