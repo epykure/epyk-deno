@@ -13,9 +13,6 @@ In this design the logic on the web server is done directly in a native language
 in this example the web server is Deno and we are using JavaScript to simply render the page.
 There is no extra logic added to this example as the idea is to demonstrate the concept.
 
-<div align="center" >
-    <img src="https://github.com/epykure/epyk-deno/blob/master/static/images/application_server.PNG?raw=true">
-</div>
 
 ## Quickstart
 
@@ -33,7 +30,7 @@ Few python scripts will be used to transpile the code and generate based on thos
 **Artifact are not supposed to changed directly**
 
 <div align="center" >
-    <img src="https://github.com/epykure/epyk-deno/blob/master/static/images/details.PNG?raw=true">
+    <img src="https://github.com/epykure/epyk-deno/blob/master/static/images/application_server.PNG?raw=true">
 </div>
 
 ## Design Principle (web server + Application server)
